@@ -17,6 +17,7 @@ apply plugin:"idea"
 apply plugin:"org.grails.grails-plugin"
 apply plugin:"asset-pipeline"
 apply plugin:"org.grails.grails-gsp"
+apply plugin:"org.grails.grails-plugin-publish"
 
 repositories {
     mavenLocal()
@@ -84,6 +85,20 @@ bootRun {
 }
 // enable if you wish to package this plugin as a standalone application
 bootRepackage.enabled = false
+
+grailsPublish {
+    githubSlug = 'grails-plugins/grails-spring-batch'
+    license {
+        name = 'Apache-2.0'
+    }
+
+    desc = "Adds Spring Batch support including job configuration using Spring Bean DSL and configuration reloading"
+    developers = [longwa: "Aaron Long", jengelman: "John Engelman", dbower: "Daniel Bower"]
+
+    issueTrackerUrl = "https://github.com/longwa/grails-spring-batch/issues"
+    vcsUrl = "https://github.com/longwa/grails-spring-batch"
+}
+
 
 allprojects {
     tasks.withType(Test) {
