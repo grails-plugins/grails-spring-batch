@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 set -e
-set -n
 
 export EXIT_STATUS=0
 
