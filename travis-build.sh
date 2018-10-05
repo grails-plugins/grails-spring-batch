@@ -12,8 +12,7 @@ rm -rf build
 
 ./gradlew --stop
 
-./gradlew clean || EXIT_STATUS=$?
-./gradlew :check || EXIT_STATUS=$?
+./gradlew clean check assemble || EXIT_STATUS=$?
 
 
 if [[ ${EXIT_STATUS} -ne 0 ]]; then
