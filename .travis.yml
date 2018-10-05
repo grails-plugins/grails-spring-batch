@@ -11,9 +11,9 @@ before_install:
   - sed -e "s/^\\(127\\.0\\.0\\.1.*\\)/\\1 $(hostname | cut -c1-63)/" /etc/hosts | sudo
     tee /etc/hosts
   - cat /etc/hosts
+  - JAVA_HOME=$(jdk_switcher home openjdk8) ./gradlew
 before_script:
   - rm -rf target
-  - sudo sed -i 's/security.provider.9/#security.provider.9/g' $JAVA_HOME/jre/lib/security/java.security
 script: JAVA_HOME=$(jdk_switcher home openjdk7) "./travis-build.sh"
 env:
   global:
