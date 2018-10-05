@@ -47,8 +47,8 @@ class SpringBatchGrailsPlugin extends Plugin {
         [name: "Daniel Bower", email: "daniel.bower@infinum.com"],
         [name: "Aaron Long", email: "longwa@gmail.com"],
     ]
-    def issueManagement = [system: 'github', url: 'https://github.com/longwa/grails-spring-batch/issues']
-    def scm = [url: 'https://github.com/longwa/grails-spring-batch']
+    def issueManagement = [system: 'github', url: 'https://github.com/grails-plugins/grails-spring-batch/issues']
+    def scm = [url: 'https://github.com/grails-plugins/grails-spring-batch']
 
     def watchedResources = [
         "file:./src/main/resources/batch/**/*BatchConfig.groovy",

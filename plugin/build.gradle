@@ -95,8 +95,8 @@ grailsPublish {
     desc = "Adds Spring Batch support including job configuration using Spring Bean DSL and configuration reloading"
     developers = [longwa: "Aaron Long", jengelman: "John Engelman", dbower: "Daniel Bower", puneetbehl: "Puneet Behl"]
 
-    issueTrackerUrl = "https://github.com/longwa/grails-spring-batch/issues"
-    vcsUrl = "https://github.com/longwa/grails-spring-batch"
+    issueTrackerUrl = "https://github.com/grails-plugins/grails-spring-batch/issues"
+    vcsUrl = "https://github.com/grails-plugins/grails-spring-batch"
 }
 
 
