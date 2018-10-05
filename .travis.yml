@@ -4,17 +4,16 @@ cache:
   - "$HOME/.gradle"
 language: groovy
 jdk:
-  - openjdk7
+  - openjdk8
 before_install:
   - cat /etc/hosts
   - sudo hostname "$(hostname | cut -c1-63)"
   - sed -e "s/^\\(127\\.0\\.0\\.1.*\\)/\\1 $(hostname | cut -c1-63)/" /etc/hosts | sudo
     tee /etc/hosts
   - cat /etc/hosts
-  - JAVA_HOME=$(jdk_switcher home openjdk8) ./gradlew
 before_script:
   - rm -rf target
-script: JAVA_HOME=$(jdk_switcher home openjdk7) "./travis-build.sh"
+script: "./travis-build.sh"
 env:
   global:
   - GRADLE_OPTS="-Xmx768m -Xms256m -XX:MaxPermSize=256m -XX:+CMSClassUnloadingEnabled"
