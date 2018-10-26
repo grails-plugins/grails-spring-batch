@@ -1,4 +1,4 @@
-# GRAILS SPRING BATCH PLUGIN
+# GRAILS SPRING BATCH PLUGIN [![Build Status](https://travis-ci.org/grails-plugins/grails-spring-batch.svg?branch=master)](https://travis-ci.org/grails-plugins/grails-spring-batch)
 
 This plugin adds the Spring Batch framework to a Grails project. It's intent is to minimize/eliminate the need for verbose XML files to configure Spring Batch jobs.
 
