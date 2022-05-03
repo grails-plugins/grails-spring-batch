@@ -11,7 +11,7 @@ To install the plugin, add the following entry to your `build.gradle` dependenci
 compile ':spring-batch:3.0.0.RC1'
 ```
 
-Once the plugin is installed, you can define your Spring Batch job configuration in a Groovy script file in your application's `grails-app/batch` directory. The script's filename must end with BatchConfig (i.e. `SimpleJobBatchConfig.groovy`). Define your Spring Batch job using the Grails BeanBuilder syntax (just like in the `resources.groovy` file).
+Once the plugin is installed, you can define your Spring Batch job configuration in a Groovy script file in your application's `src/main/resources/batch` directory. The script's filename must end with BatchConfig (i.e. `SimpleJobBatchConfig.groovy`). Define your Spring Batch job using the Grails BeanBuilder syntax (just like in the `resources.groovy` file).
 
 To launch a job from your application do the following:
 
